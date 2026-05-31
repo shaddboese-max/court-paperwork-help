@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Justice Navigation Service — deployable landing page. Mini-built 2026-05-31.
+     TO GO LIVE: (1) create a free form at formspree.io, paste its endpoint into the form `action` below
+     (or leave the mailto fallback); (2) deploy this folder to Vercel/Netlify/GitHub Pages (drag-drop)
+     — or Neo deploys it. (3) set your phone/email in the two PLACEHOLDERS. That's it: live + taking clients. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plain-English Help With Your Court Paperwork</title>
+<style>
+  :root{--ink:#1a2332;--accent:#2c5f8a;--soft:#f4f6f9;--line:#dce3ea}
+  *{box-sizing:border-box} body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  header{background:var(--ink);color:#fff;padding:54px 0 46px;text-align:center}
+  header h1{font-size:30px;margin:0 0 12px} header p{font-size:18px;opacity:.92;margin:0 auto;max-width:560px}
+  .lived{font-style:italic;opacity:.8;margin-top:18px;font-size:15px}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:22px} .tiers{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{border:1px solid var(--line);border-radius:12px;padding:20px;background:#fff}
+  .tier h3{margin:0 0 4px;color:var(--accent)} .price{font-size:26px;font-weight:700;margin:6px 0}
+  .tier ul{padding-left:18px;margin:10px 0 0;font-size:14px}
+  .can{background:var(--soft);border-radius:12px;padding:18px 22px;font-size:15px}
+  .can b{color:var(--accent)}
+  form{display:grid;gap:12px} label{font-weight:600;font-size:14px} input,textarea,select{width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font-size:15px;font-family:inherit}
+  button{background:var(--accent);color:#fff;border:0;padding:14px;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer}
+  .disc{font-size:13px;color:#5a6675;background:#fff8e6;border:1px solid #f0e0a8;border-radius:8px;padding:14px;margin-top:18px}
+  footer{padding:26px 0;text-align:center;font-size:13px;color:#7a8694}
+</style></head>
+<body>
+<header><div class="wrap">
+  <h1>Confused by your court paperwork? Let's make it make sense.</h1>
+  <p>I turn the confusing stack of legal documents you already have into plain English — what each paper means, your dates and deadlines in one place, everything organized.</p>
+  <p class="lived">I've been through this system myself. I built this to give people the clarity I wish I'd had.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="can"><b>Important:</b> I am <b>not an attorney</b> and I do <b>not give legal advice</b>. I make your situation <b>understandable and organized</b> so you can make your own decisions and talk to your lawyer or public defender with confidence. For legal advice, I'll point you to free resources.</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Pick what you need</h2>
+  <div class="tiers">
+    <div class="tier"><h3>Clarity</h3><div class="price">$150</div><small>2–3 days</small>
+      <ul><li>Plain-English summary of your documents</li><li>What each paper is &amp; what it's asking</li></ul></div>
+    <div class="tier"><h3>Organized</h3><div class="price">$400</div><small>4–5 days</small>
+      <ul><li>Everything in Clarity</li><li>Full case timeline</li><li>Organized records</li><li>Deadline &amp; checklist tracker</li></ul></div>
+    <div class="tier"><h3>Prepared</h3><div class="price">$850</div><small>~1 week</small>
+      <ul><li>Everything in Organized</li><li>Document preparation (your info)</li><li>Court-date prep packet</li></ul></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Tell me what you're facing</h2>
+  <p>No documents yet — just tell me your situation. Confidential, judgment-free, fast. I'll reply with which package fits.</p>
+  <!-- GO-LIVE: replace YOUR_FORM_ID with a free formspree.io endpoint; or it falls back to email. -->
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div><label>Your name</label><input name="name" required></div>
+    <div><label>Email or phone</label><input name="contact" required></div>
+    <div><label>State / county your case is in</label><input name="location"></div>
+    <div><label>What are you facing? (in your own words)</label><textarea name="situation" rows="4" required></textarea></div>
+    <div><label>Your next court date or deadline (if you know it)</label><input name="deadline"></div>
+    <button type="submit">Send — and take a breath</button>
+  </form>
+  <p style="font-size:13px;margin-top:10px">Prefer to reach out directly? Call or text <b>785-342-6977</b>.</p>
+  <div class="disc"><b>Not legal advice.</b> This is a non-attorney document preparation and organization service. It does not provide legal advice, opinions, strategy, or representation, and is not a substitute for a licensed attorney. For legal decisions, consult a lawyer or your public defender. No attorney-client relationship is created.</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Free legal help (the legal advice I can't give)</h2>
+  <p>If you need actual legal advice or can't afford a lawyer, please reach these — for free:</p>
+  <div class="can">
+    <b>Missouri (Jackson County / Independence):</b><br>
+    • Criminal — can't afford a lawyer → <b>Jackson County Public Defender: (816) 889-2099</b><br>
+    • Civil → <b>Legal Aid of Western Missouri: (816) 474-6750</b><br><br>
+    <b>Kansas:</b><br>
+    • Criminal → <b>KS Board of Indigents' Defense (BIDS): (785) 296-6631</b> (routes to your county public defender)<br>
+    • Civil → <b>Kansas Legal Services: (316) 267-3975</b> (statewide intake)<br><br>
+    Most courthouses also have a free self-help center. You are not alone in this.
+  </div>
+</div></section>
+
+<footer><div class="wrap">Clarity &amp; organization for people navigating the courts — from someone who's been there.</div></footer>
+</body></html>
