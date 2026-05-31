@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shaddboese-max.github.io/court-paperwork-help/sitemap.xml
